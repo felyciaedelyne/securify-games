@@ -1,0 +1,184 @@
+{
+ "sklearn": "1.7.2",
+ "jenis": "hibrida: TF-IDF+LR (kata) + fitur struktur + HistGradientBoosting",
+ "konfigurasi": "semua_data_bobot_id",
+ "n_latih": 15111,
+ "sumber": {
+  "Phishing_Email": 3670,
+  "Nigerian_Fraud": 2898,
+  "Nazario": 1551,
+  "SpamAssasin": 1296,
+  "Enron": 1253,
+  "CEAS_08": 1241,
+  "sms_spam_collection": 1236,
+  "Ling": 1063,
+  "dataset_sms_spam_v1": 903
+ },
+ "evaluasi": {
+  "konfigurasi_dipilih": "semua_data_bobot_id",
+  "pemilihan_validasi_indonesia": {
+   "semua_data": {
+    "n": 181,
+    "akurasi": 0.9669,
+    "presisi": 0.942,
+    "recall": 0.9701,
+    "f1": 0.9559,
+    "auc": 0.9982
+   },
+   "semua_data_bobot_id": {
+    "n": 181,
+    "akurasi": 0.9779,
+    "presisi": 0.9565,
+    "recall": 0.9851,
+    "f1": 0.9706,
+    "auc": 0.9893
+   },
+   "campuran_bobot_id": {
+    "n": 181,
+    "akurasi": 0.9669,
+    "presisi": 0.942,
+    "recall": 0.9701,
+    "f1": 0.9559,
+    "auc": 0.9949
+   },
+   "indonesia_saja": {
+    "n": 181,
+    "akurasi": 0.9779,
+    "presisi": 0.9701,
+    "recall": 0.9701,
+    "f1": 0.9701,
+    "auc": 0.9971
+   }
+  },
+  "uji_INDONESIA": {
+   "A_tfidf_lr": {
+    "n": 181,
+    "akurasi": 0.9779,
+    "presisi": 0.9701,
+    "recall": 0.9701,
+    "f1": 0.9701,
+    "auc": 0.9974
+   },
+   "B_struktur_gb": {
+    "n": 181,
+    "akurasi": 0.9669,
+    "presisi": 0.942,
+    "recall": 0.9701,
+    "f1": 0.9559,
+    "auc": 0.995
+   },
+   "C_hibrida": {
+    "n": 181,
+    "akurasi": 0.9834,
+    "presisi": 0.9706,
+    "recall": 0.9851,
+    "f1": 0.9778,
+    "auc": 0.9921
+   }
+  },
+  "uji_sumber_lain": {
+   "A_tfidf_lr": {
+    "n": 2842,
+    "akurasi": 0.9708,
+    "presisi": 0.9809,
+    "recall": 0.9612,
+    "f1": 0.971,
+    "auc": 0.9955
+   },
+   "B_struktur_gb": {
+    "n": 2842,
+    "akurasi": 0.867,
+    "presisi": 0.8919,
+    "recall": 0.84,
+    "f1": 0.8652,
+    "auc": 0.9384
+   },
+   "C_hibrida": {
+    "n": 2842,
+    "akurasi": 0.9792,
+    "presisi": 0.9812,
+    "recall": 0.9778,
+    "f1": 0.9795,
+    "auc": 0.9964
+   }
+  },
+  "subset_ada_tautan": {
+   "A_tfidf_lr": {
+    "n": 927,
+    "akurasi": 0.9827,
+    "presisi": 0.976,
+    "recall": 0.989,
+    "f1": 0.9825,
+    "auc": 0.9989
+   },
+   "B_struktur_gb": {
+    "n": 927,
+    "akurasi": 0.9029,
+    "presisi": 0.9024,
+    "recall": 0.8985,
+    "f1": 0.9004,
+    "auc": 0.9623
+   },
+   "C_hibrida": {
+    "n": 927,
+    "akurasi": 0.9838,
+    "presisi": 0.9782,
+    "recall": 0.989,
+    "f1": 0.9835,
+    "auc": 0.9992
+   }
+  },
+  "subset_angka_panjang": {
+   "A_tfidf_lr": {
+    "n": 734,
+    "akurasi": 0.9741,
+    "presisi": 0.9746,
+    "recall": 0.9719,
+    "f1": 0.9733,
+    "auc": 0.9976
+   },
+   "B_struktur_gb": {
+    "n": 734,
+    "akurasi": 0.8992,
+    "presisi": 0.9099,
+    "recall": 0.8792,
+    "f1": 0.8943,
+    "auc": 0.9545
+   },
+   "C_hibrida": {
+    "n": 734,
+    "akurasi": 0.9796,
+    "presisi": 0.9803,
+    "recall": 0.9775,
+    "f1": 0.9789,
+    "auc": 0.997
+   }
+  },
+  "soal_game_cek_domain": {
+   "A_tfidf_lr": {
+    "n": 36,
+    "akurasi": 0.7222,
+    "presisi": 0.8,
+    "recall": 0.6316,
+    "f1": 0.7059,
+    "auc": 0.8514
+   },
+   "B_struktur_gb": {
+    "n": 36,
+    "akurasi": 0.6667,
+    "presisi": 0.8889,
+    "recall": 0.4211,
+    "f1": 0.5714,
+    "auc": 0.9195
+   },
+   "C_hibrida": {
+    "n": 36,
+    "akurasi": 0.7222,
+    "presisi": 0.8,
+    "recall": 0.6316,
+    "f1": 0.7059,
+    "auc": 0.8204
+   }
+  }
+ }
+}

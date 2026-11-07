@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EduSecurify: Satpam Digital</title>
+<link rel="icon" type="image/png" href="img/ikon.png">
+<link rel="apple-touch-icon" href="img/ikon.png">
+<meta name="theme-color" content="#3b4fb8">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div id="app">
+  <header><span id="title"></span><span><button class="rp" id="snd" title="Suara">🔊</button><button class="rp" data-act="replay" title="Mulai ulang">↻</button><span class="pts" id="pts" data-act="goshop" title="Buka Toko"></span></span></header>
+  <div id="rank" data-act="goprofile" title="Lihat profilmu"></div>
+  <main id="main"></main>
+  <nav>
+    <button data-tab="home"><i>🏠</i>Beranda</button>
+    <button data-tab="dm"><i>✉️</i>Pesan</button>
+    <button data-tab="tasks"><i>📋</i>Task</button>
+    <button data-tab="tweet"><i>✍️</i>Tweet</button>
+    <button data-tab="shop"><i>🛒</i>Toko</button>
+    <button data-tab="endless" id="navEn" style="display:none"><i>♾️</i>Endless</button>
+  </nav>
+  <button id="hint" data-act="hint" title="Minta hint dari maskot" style="display:none"></button>
+</div>
+<div id="dlg"><div class="dwrap"><div id="spw"><img id="sprite" alt=""></div><div class="dbox" id="dbox"><div class="mas" id="mas"></div><div style="flex:1"><div class="dn" id="dn"></div><div class="dt" id="dt"></div><div class="nx">ketuk untuk lanjut ▸</div></div></div></div></div>
+<div id="splash"><div id="spLogo"></div><h1 id="spName"></h1><p>Satpam Digital</p><div class="orbs"><span></span><span></span><span></span></div><div class="ld"><i></i></div><small>Memuat aplikasi...</small></div>
+<div id="toast"></div>
+
+
+<!-- Urutan penting: data -> ml-hook -> game -->
+<script src="data.js"></script>
+<script src="ml-hook.js"></script>
+<script src="fx.js"></script>
+<script src="shop.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
